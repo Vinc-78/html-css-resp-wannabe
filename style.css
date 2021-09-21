@@ -72,23 +72,25 @@ img {
   clear: both;
 }
 
+/* ****************************************
+***        Media queries <= 420px       ***
+**************************************** */
 
 @media screen and (max-width: 420px) {
 
   .row{
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
     margin:auto;
     font-size: 24px;
     margin-bottom: 50px;
+   
   }
 
   #lezioni .row>.left,
   #lezioni .row>.right {
     float: none;
     width: 100%;
-    margin-bottom:40px;
+    background-color:rgb(242, 242 , 205);
   }
 
   #steps .row>.left,
@@ -97,6 +99,73 @@ img {
     width: 100%;
     margin-bottom:40px;
   }
+
+  #why .row  {
+    background-color:rgb(242, 242 , 205);
+    
+  }
+  
+  h1{ font-size: 40px;
+    text-transform: uppercase;}
+
+  #lezioni .row h1{ margin: 0;
+                    background-color: rgb(242, 242 , 205);
+                    font-size: 40px;
+                    text-transform: uppercase;
+}
+
+  h3{
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  img{
+    height: 150px;}
+
+  #why .row img {
+      
+      border-radius:5%;
+      margin-bottom: 30px;
+    }
+  
+}
+
+/* ****************************************
+***    Media queries >= 421px & <=991   ***
+**************************************** */
+
+@media screen and (min-width: 421px) and (max-width: 991px){
+  
+  .row{
+    width: 90%;
+    margin:auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+    width: 100%;
+    ;
+  }
+
+
+  #steps .row>.left { flex:1 100%;
+                      margin-bottom: 100px;}
+
+  #steps .row>.central { align-self: flex-start; 
+                        margin-right: auto;}
+
+  #steps .row>.right  { align-self: flex-end;
+                        margin-left: auto; }
+
+  #steps .row>.central,
+  #steps .row>.right { margin-bottom: 100px;}                 
 
   h1{
     font-size: 40px;
@@ -109,14 +178,5 @@ img {
     text-transform: uppercase;
   }
 
-  img{
-    height: 150px;}
-
-  #why .row img {
-      
-      border-radius:100%;
-      margin-bottom: 30px;
-    }
-  
 
 }
